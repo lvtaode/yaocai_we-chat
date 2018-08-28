@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/aboutUs/main",
+    "pages/product/list",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E3E3E3",
+    "navigationBarTitleText": "军林药材商行",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#585858",
+    "selectedColor": "#AA4E31",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/main.png",
+      "selectedIconPath": "/images/main_h.png"
+    },
+    {
+      "pagePath": "pages/product/list",
+      "text": "分类",
+      "iconPath": "/images/kind.png",
+      "selectedIconPath": "/images/kind_h.png"
+    },{
+      "pagePath": "pages/aboutUs/main",
+      "text": "关于我们",
+      "iconPath": "/images/personal.png",
+      "selectedIconPath": "/images/personal_h.png"
+    }]
+  }
+}

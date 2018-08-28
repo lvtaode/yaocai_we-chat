@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<!-- 轮播图 -->
+<view class="banner">
+  <swiper indicator-dots indicator-color="#4A4945" indicator-active-color="#fff" autoplay interval="3000" style='height:386rpx;'>
+  <block wx:for="{{bannerUrls}}" wx:key="item">
+    <swiper-item>
+      <image bindtap='proImg' data-img="http://yaocai.yxwlit.com/public/uploads/{{item.ad_pic}}" src="http://yaocai.yxwlit.com/public/uploads/{{item.ad_pic}}"/>
+     </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 文字部分 -->
+<view class='explain'>
+    中药是中国传统的药材，中国药文化源远流长、博大精深，既包含数千年中药文明又融合近现代西药文明所创造的中西药并举、独具特色的文化现象，是中国优秀文化的重要组成部分。
+</view>
+<!-- 热销产品 -->
+<block>
+    <view class='title'>热销产品</view>
+    <view class='box'>
+          <view class='item' wx:for="{{hotUrls}}" wx:key="item">
+              <image bindtap='proImg' data-img="http://yaocai.yxwlit.com/public/uploads/{{item.pic}}" style='width:250rpx;height:193rpx;' src='http://yaocai.yxwlit.com/public/uploads/{{item.pic}}'></image>
+              <view style="font-family:'黑体';letter-spacing: -3rpx;">{{item.title}}</view>
+              <view class='comment'>{{item.des}}</view>
+          </view>
+    </view>
+  <view bindtap='jump' class='more'>查看更多>></view>
+</block>
+<view>
+    <image style='width:100%;height:345rpx;' src="/images/ad1.png"></image>
+</view>
+<block>
+    <view class='title'>商家推荐</view>
+    <view class='box'>
+          <view class='item' wx:for="{{recommendUrls}}" wx:key="item">
+              <image bindtap='proImg' data-img="http://yaocai.yxwlit.com/public/uploads/{{item.pic}}"  style='width:250rpx;height:193rpx;' src='http://yaocai.yxwlit.com/public/uploads/{{item.pic}}'></image>
+              <view style="font-family:'黑体';letter-spacing: -3rpx;">{{item.title}}</view>
+              <view class='comment'>{{item.des}}</view>
+          </view>
+    </view>
+  <view bindtap='jump' class='more'>查看更多>></view>
+</block>
+<view class='foot'>
+  <view class='title'>中药文化</view>
+  <view class='bottom'>
+        <image src="/images/culture.png"></image>
+        <view>
+          灵芝,外形呈伞状,菌盖肾形、半圆形或近圆形，为多孔菌科真菌灵芝的子实体。具有补气安神、止咳平喘的功效，用于眩晕不眠、心悸气短、虚劳咳喘。 \n灵芝味甘苦、性平，归心、肺、肝、脾经；可养心安神，养肺益气，理气化瘀、滋肝健脾。主治虚劳体弱，神疲乏力，心悸失眠，头目昏晕，久咳气喘，食欲不振，反应迟钝，呼吸短促等症。
+        </view>
+  </view>
+</view>

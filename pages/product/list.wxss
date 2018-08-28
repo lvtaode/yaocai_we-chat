@@ -1,0 +1,24 @@
+/* pages/product/list.wxss */
+page{
+  background-image:url('http://yaocai.yxwlit.com/public/xcx/b3.png'); 
+  background-size: 100% 100vh;
+  background-attachment:fixed;
+  padding-top: 60rpx;
+  background-color:#F6F6F6; 
+}
+.box{
+  width: 90%;
+  margin: 0 auto;
+  height: 700rpx;
+}
+.item{
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+.comment{
+  font-size: 28rpx;
+  color: #696969;
+  margin-top: 10rpx;
+}

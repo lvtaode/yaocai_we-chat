@@ -1,0 +1,62 @@
+/* pages/personal/main.wxss */
+page{
+   font-size: 30rpx;
+    color: #696969;
+  font-weight: 600;
+}
+.banner image{
+  width: 100%;
+  height: 100%;
+}
+.location{
+  padding: 35rpx 30rpx;
+}
+.location image{
+  width: 26rpx;
+  height: 35rpx;
+  margin-right: 15rpx;
+}
+.location text{
+  float: right;
+  width: 94%;
+}
+.tel{
+  margin-top:150rpx; 
+}
+.tel image{
+  width:36rpx;
+  height: 40rpx;
+  margin-right: 15rpx;
+  vertical-align: middle;
+}
+.tel text{
+  font-size: 28rpx;
+  float: none;
+}
+.title{
+  border-top: 5px solid #ECECED;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+icon{
+  display:inline-block;
+  width: 5px;
+  height: 60%;
+  background-color: #9A3F20; 
+  vertical-align: middle;
+  margin-left: 50rpx;
+}
+.env{
+  width: 95%;
+  margin: 20rpx auto 35rpx;
+}
+.env image{
+  width: 150rpx;
+  height: 204rpx;
+  margin-left:25rpx; 
+}
+.content{
+  padding: 0 70rpx;
+  font-size: 26rpx;
+  line-height: 45rpx;
+}

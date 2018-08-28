@@ -1,0 +1,8 @@
+<!--pages/product/list.wxml-->
+ <view class='box'>
+          <view class='item' wx:for="{{productList}}" wx:key="item">
+              <image bindtap='proImg' data-img="http://yaocai.yxwlit.com/public/uploads/{{item.pic}}" style='width:250rpx;height:193rpx;' src='http://yaocai.yxwlit.com/public/uploads/{{item.pic}}'></image>
+              <view style="font-family:'黑体';letter-spacing: -3rpx;">{{item.title}}</view>
+              <view class='comment'>{{item.des}}</view>
+          </view>
+    </view>

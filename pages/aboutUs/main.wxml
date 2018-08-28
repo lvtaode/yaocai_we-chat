@@ -1,0 +1,41 @@
+<!--pages/personal/main.wxml-->
+<view class='banner'>
+    <swiper indicator-dots indicator-color="#4A4945" indicator-active-color="#fff" autoplay interval="3000" style='height:555rpx;'>
+  <block wx:for="{{bannerUrls}}" wx:key="item">
+    <swiper-item>
+      <image bindtap='proImg' data-img="http://yaocai.yxwlit.com/public/uploads/{{item.ad_pic}}" src="http://yaocai.yxwlit.com/public/uploads/{{item.ad_pic}}"/>
+     </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 地址 -->
+<view class='location'>
+    <view>
+      <image src="/images/location.png"></image>
+      <text>陕西省西安市经开区草滩生态产业园雨润农产品全球采购中心中药材交易区
+      </text>
+    </view>
+    <text style='color:#0aa1ed;margin-top:15rpx;'>店铺一:13栋2排11号商铺
+          店铺二:3栋4层2排22号商铺</text>
+    <view class='tel'>
+        <image src='/images/tel.png'></image><text bindtap='calla' space="ensp">张军林  18309266727   </text><text bindtap='callb'>孟月琴  15309242693</text>
+    </view>
+</view>
+<view class='title'>
+   <icon></icon><text style='margin-left:15rpx;'>店铺照片</text>
+</view> 
+<view class='env'>
+    <image bindtap='proImg' data-img="http://yaocai.yxwlit.com/public/uploads/{{item.ad_pic}}" wx:for="{{envUrls}}"  wx:key="{{item}}" src="http://yaocai.yxwlit.com/public/uploads/{{item.ad_pic}}"></image>
+</view>
+<view class='title'>
+   <icon></icon><text style='margin-left:15rpx;'>店铺介绍</text>
+</view>
+<view class='content'>
+    <text  space="ensp">   本店位于西安市经开区草滩生态产业区雨润农产品全球采购中心中药材交易区13栋2排11号商铺，成立于2016年。主营进口西洋参、高丽参、三七、冬虫夏草、鹿茸蜡片红参、铁皮石斛、天麻等滋补类品种。现在业务范围已覆盖全国各地。
+    </text>
+    <text space="ensp">军林药材商行理念：诚信经营，以诚待人，以质服人。
+    </text> 
+    <text  space="ensp">军林药材商行优势：实体店为平台，面向全国各地、海外经销商、进出口公司、旅游公司和终端客户消费群，批零兼营。多渠道产地直接供货。
+    </text> 
+</view>
